@@ -27,7 +27,7 @@ function populateForm() {
     try {
         const savedData = localStorage.getItem(STORAGE_KEY);
         if (savedData) {
-            const parsedData = JSON.parse(avedData);
+            const parsedData = JSON.parse(savedData);
             if (parsedData.email) {
                 form.elements.email.value = parsedData.email;
                 formData.email = parsedData.email;

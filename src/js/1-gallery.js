@@ -88,8 +88,8 @@ const galleryMarkUp = images.map(image => {
 
 gallertList.insertAdjacentHTML('beforeend', galleryMarkUp);
 
-const lightbox = new SimpleLightbox('.gallery', {
-    captionData: 'alt',
+const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250,
 })
